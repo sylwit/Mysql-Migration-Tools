@@ -1,0 +1,20 @@
+Mysql-Migration-Tools
+
+1) What is it ?
+---------------
+
+Mysql-Migration-Tools is a script which allow you to move mysql datas between servers.
+
+It also moves users with their privileges BUT the new server will be accessible by a remote connection (not localhost)
+
+NB : This tool modifies the DB priv to allow this remote connection.
+
+2) Usage
+--------
+
+./migrate_mysql.sh DBName DBUser
+
+assuming DBName and DBUser are the same you can use
+./migrate_mysql.sh DBName
+
+
